@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <title>Regisztráció</title>
     <link href = "regisztr.css" rel = "stylesheet" type = "text/css">
+    <script src = "validate.js" rel = "script" type = "text/javascript"></script>
 </head>
 <body>
-<h1 style = "text-align: center">Regisztráció</h1>
-<div class="col">
-</div >
-<input type="text" name="username" placeholder="Felhasználónév" required><br>
-<input type="password" name="password" placeholder="Jelszó" required><br>
-<input type="password" name="password" placeholder="Jelszó megerősítése" required><br>
-<input type = "email" name = "email" placeholder = "Email cím"><br>
-<input type="submit" value="Regisztráció megerősítése"onclick="">
+<div class="container">
+    <form onsubmit="validate()" class="form" id="form">
+        <h2>Regisztráció</h2>
+
+        <div class="form-control">
+            <label for="">felhasználónév</label>
+            <input type="text" id="username" required >
+            <small>error message</small>
+        </div>
+        <div class="form-control">
+            <label for="">email cím</label>
+            <input type="email" id="email" required>
+            <small>error message</small>
+        </div>
+        <div class="form-control">
+            <label for="">jelszó</label>
+            <input type="password" id="password" required>
+            <span id = "messages"></span>
+            <small>error message</small>
+        </div>
+        <div class="form-control">
+            <label for="">jelszó megerősítése</label>
+            <input type="password" id="confirmPassword" required>
+            <small>error message</small>
+        </div>
+
+        <button type="submit" id="myBtn">elküldés</button>
+
+    </form>
 </div>
 
 </body>

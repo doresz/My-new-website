@@ -1,23 +1,70 @@
 body{
     background-image: url("images/szines-lepkek-repulnek-hatterkep-36144.jpg");
     text-align: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    font-family: 'open sans', sans-serif;
 }
-input[type = "submit"]{
-    cursor: pointer;
+body{
+
+}
+.container{
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,.3);
+    border-radius: 5px;
+    width: 400px
+}
+.form{
+    padding: 30px 40px
+}
+.form-control{
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 10px
+}
+.form-control.error input{
+    border-color: red
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error small{
+    visibility: inherit;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: #777
+}
+h2{
+    text-align: center;
+    text-transform: capitalize;
 }
 input{
-    width: 30%;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    margin: 5px 0;
-    opacity: 0.85;
-    display: inline-block;
-    font-size: 17px;
-    line-height: 20px;
-    text-decoration: none; /* remove underline from anchors */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0
 }
-input:hover,
-.btn:hover {
-    opacity: 1;
+small{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: red;
+    visibility: hidden;
+}
+#myBtn{
+    background: #3498db;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
 }
