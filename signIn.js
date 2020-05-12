@@ -10,13 +10,15 @@ var firebaseConfig = {
     appId: "1:24765085513:web:c3fcadf480519a9a04cc98",
     measurementId: "G-7YL9SM0HD5"
 };
+
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
-const firebase = require("firebase");
+const firebase = require("firebase/app");
 
 // Add the Firebase products that you want to use
 require("firebase/auth");
 require("firebase/firestore");
+
 
 firebase.initializeApp(firebaseConfig);
 
