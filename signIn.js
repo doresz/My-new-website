@@ -13,7 +13,7 @@ var firebaseConfig = {
 
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
-const firebase = require("firebase/app");
+const firebase = require("firebase");
 
 // Add the Firebase products that you want to use
 require("firebase/auth");
@@ -26,7 +26,7 @@ const auth = firebase.auth();
 
 function signUp(){
 const email = document.getElementById("email");
-const password = document.getElementById("password2");
+const password = document.getElementById("password");
 const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
 promise.catch(e=>alert(e.message));
 alert("Signed Up!");
