@@ -13,14 +13,21 @@ var firebaseConfig = {
 
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
-const firebase = require("firebase");
+const firebase = require("firebase-admin");
+const serviceAccount = require("signin-a52a6-firebase-adminsdk-ka1mq-249bc625ac.json");
+
+firebase.initializeApp({
+    credential: firebase.credential.cert("serviceAccount"),
+    databaseURL: "https://signin-a52a6.firebaseio.com"
+});
 
 // Add the Firebase products that you want to use
 require("firebase/auth");
 require("firebase/firestore");
 
 
-firebase.initializeApp(firebaseConfig);
+//firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 const auth = firebase.auth();
 
