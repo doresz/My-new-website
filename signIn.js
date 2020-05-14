@@ -20,7 +20,7 @@ function signUp(){
     const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
     promise.catch(e=>alert(e.message));
     alert("Signed Up!");
-    window.location.href = "http://localhost:63342/Html/htmlfile2/index.html?_ijt=div2895hidq8vdc4uhstbtnjis";
+    window.location.replace("https://doresz.github.io/My-new-website/");
 }
 
 function signIn(){
@@ -29,12 +29,12 @@ function signIn(){
     const promise = auth.signInWithEmailAndPassword(email.value,password.value);
     promise.catch(e=>alert(e.message));
     alert("Signed In!"+email);
-    window.location.href = "http://localhost:63342/Html/htmlfile2/index.html?_ijt=div2895hidq8vdc4uhstbtnjis";
+    window.location.replace("https://doresz.github.io/My-new-website/");
 }
 function signOut(){
     auth.signOut();
     alert("Signed Out!");
-    window.location.href = "http://localhost:63342/Html/htmlfile2/index.html?_ijt=div2895hidq8vdc4uhstbtnjis";
+    window.location.replace("https://doresz.github.io/My-new-website/");
 }
 auth.onAuthStateChanged(function(user) {
     if (user) {
