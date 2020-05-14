@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>Regisztráció</title>
     <link href = "regisztr.css" rel = "stylesheet" type = "text/css">
-    <script src = "validate.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <script src = "signIn.js"></script>
+
 </head>
 <body>
 <div class="container">
-    <form onsubmit="validate()" class="form" id="form">
+    <form onsubmit="signUp()" class="form" id="form">
         <h2>Regisztráció</h2>
-
         <div class="form-control">
             <label>email cím</label>
             <input type="email" id="email" required>
@@ -28,7 +30,7 @@
             <small>error message</small>
         </div>
 
-        <button type="submit" id="myBtn"onclick = "signUp()">elküldés</button>
+        <button type="submit" id="myBtn">elküldés</button>
 
     </form>
 </div>
