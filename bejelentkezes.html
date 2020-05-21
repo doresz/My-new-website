@@ -6,11 +6,12 @@
     <link href="bejelntk.css" rel="stylesheet" type="text/css">
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <script src="https://gist.github.com/baskaran-md/e46cc25ccfac83f153bb.js"></script>
     <script src="signIn.js"></script>
 </head>
 <body>
 <div class="container">
-    <form action="" id="logIn" method="post">
+    <form id="logInFb"method = "post">
         <div class="row">
             <h1 style="text-align:center">Bejelentkezés</h1><br>
             <div class="vl">
@@ -18,7 +19,7 @@
             </div>
 
             <div class="col">
-                <a href="#" class="fb btn">
+                <a href="#" class="fb btn"onclick="fbSignIn()">
                     <i class="fa fa-facebook fa-fw"></i> Facebook
                 </a><br><br>
                 <a href="#" class="twitter btn">
@@ -36,12 +37,12 @@
 
                 <input type="email" id="email" placeholder="Email" required>
                 <input type="password" id="password" placeholder="Jelszó" required>
-                <input type="submit" value="Bejelentkezés" onclick="signIn()">
+                <input  type="submit" value="Bejelentkezés" onclick="signIn()">
 
 
             </div>
-
         </div>
+
     </form>
 
 </div>
