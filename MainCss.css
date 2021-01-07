@@ -2,7 +2,7 @@ body, html {
   height: 100%;
 }
 
-div {
+body {
 background-image:url("images/szines-lepkek-repulnek-hatterkep-36144.jpg");
 background-repeat:no-repeat;
 background-size:contain;
