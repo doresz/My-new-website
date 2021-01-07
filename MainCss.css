@@ -1,6 +1,10 @@
 body{
     background-image: url("images/szines-lepkek-repulnek-hatterkep-36144.jpg");
-    background-size:contain;
+    
+}
+img {
+  width: 100%;
+  height: auto;
 }
 div.scrollmenu{
     word-spacing: 20px;
