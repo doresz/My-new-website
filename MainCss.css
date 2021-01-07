@@ -1,5 +1,5 @@
 body, html {
-  height: 100%;
+  height: auto;
 }
 
 body {
@@ -10,13 +10,7 @@ background-position:center;
  
 }
 div.scrollmenu{
-    word-spacing: 20px;
-    margin-left: 2.5em;
-    font-size: large;
-    font-weight: bolder;
-    font-family: "Times New Roman", "Arial", "SansSerif";
+    margin:auto;
+   
 
-}
-.tab{
-    margin-left: 2.5em;
 }
